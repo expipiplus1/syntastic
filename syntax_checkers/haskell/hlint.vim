@@ -26,7 +26,8 @@ function! SyntaxCheckers_haskell_hlint_GetLocList() dict
         \ 'makeprg': makeprg,
         \ 'errorformat': errorformat,
         \ 'defaults': {'vcol': 1},
-        \ 'postprocess': ['compressWhitespace'] })
+        \ 'postprocess': ['compressWhitespace'],
+        \ 'subtype': 'Style'})
 endfunction
 
 call g:SyntasticRegistry.CreateAndRegisterChecker({
